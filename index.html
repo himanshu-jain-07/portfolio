@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    
+<!-- Home Page -->
+
+    <!-- Nav Bar -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">Portfolio</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Landing Page -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Himanshu Jain</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I am a second year B.tech student specializing in frontend web development. Proficient in building responsive user interface with HTML, CSS, JavaScript and React.js. Quick learner with strong leadership and communication skills.</p>
+
+            <div class="social-media">
+                <a href="https://www.instagram.com/himanshujain5012" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/himanshu-jain-55a961345" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/Himansh_Jain07" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/himanshu-jain-07" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <a href="./resume.pdf" download="himanshujain-cv.pdf" class="btn">Download CV</a>
+
+       </div>
+
+       <div class="home-img">
+            <img src="Image.png" alt=""/>
+       </div>
+
+    </section>
+
+<!-- About Page -->
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="secondimg.png" alt="">
+        </div>
+
+         <div class="about-content">
+            <h2 class="about-heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>As a frontend developer, I craft viusally stunning and user friendly interfaces that bring ideas to life. With a passion for innovation and a keen eye for detail, I deliver high quality solutions that exceed expectations. I also leverage AI to streamline development, enhance user experiences, and drive efficiency.</p>
+            <a href="./about.html" class="btn">Read More...</a>
+         </div>
+
+    </section>
+
+<!-- Services Page -->
+
+    <section class="services" id="services">
+        <h2 class="second-heading">My <span>Services</span></h2>
+
+        <div class="service-container">
+
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Crafting responsive, user friendly websites that drive engagament and conversions. Expertise in HTML, CSS, JavaScript and modern frameworks like React.js.</p>
+                <button class="btn2" id="open1">
+                    Read More...
+                </button>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Designing</h3>
+                <p>Creating intuitive, visually stunning interfaces that enhance user experience. Skilled in user research, wireframing, prototyping and usability testing.</p>
+                <button class="btn2" id="open2">
+                    Read More...
+                </button>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Development</h3>
+                <p>Building seamless, high performance mobile app that delight users. Proficient in native and cross platform development, with a focus on user centric design.</p>
+                <button class="btn2" id="open3">
+                    Read More...
+                </button>
+            </div>
+
+            <div class="service-description hide" id="description1">
+                    <i class="fa-solid fa-xmark" id="close1"></i>
+                    <h4>Web Development</h4>
+                    <p>
+                        I craft responsive, fast, and visually engaging websites using modern front-end technologies. From HTML/CSS to JavaScript frameworks, I ensure seamless user experiences across all devices. My focus is on clean code, performance, and accessibility to bring your designs to life with pixel-perfect precision and smooth interactivity.
+                    </p>
+                    <h5>Pricing</h5>
+                    <p>Based on your requirements.</p>
+                    <h5>Contacts</h5>
+                    <p>E-main : himanshujain2866@gmail.com</p>
+                    <p>Linkedin : www.linkedin.com/in/himanshu-jain-55a961345</p>
+            </div>
+            <div class="service-description hide" id="description2">
+                    <i class="fa-solid fa-xmark" id="close2"></i>
+                    <h4>UI/UX Designing</h4>
+                    <p>
+                        I design intuitive and visually striking interfaces that prioritize user experience. By combining aesthetics with usability, I create designs that guide users naturally and effectively. My process includes wireframing, prototyping, and user testing to ensure the final product meets both user needs and business goals.
+                    </p>
+                    <h5>Pricing</h5>
+                    <p>Based on your requirements.</p>
+                    <h5>Contacts</h5>
+                    <p>E-main : himanshujain2866@gmail.com</p>
+                    <p>Linkedin : www.linkedin.com/in/himanshu-jain-55a961345</p>
+            </div>
+            <div class="service-description hide" id="description3">
+                    <i class="fa-solid fa-xmark" id="close3"></i>
+                    <h4>App Development</h4>
+                    <p>
+                        I build high-performance mobile applications tailored to your needs, from concept to deployment. Using modern frameworks, I ensure your app is scalable, user-friendly, and optimized for both iOS and Android. I focus on delivering seamless functionality, clean code, and engaging user experiences that drive real results
+                    </p>
+                    <h5>Pricing </h5>
+                    <p>Based on your requirements.</p>
+                    <h5>Contacts</h5>
+                    <p>E-main : himanshujain2866@gmail.com</p>
+                    <p>Linkedin : www.linkedin.com/in/himanshu-jain-55a961345</p>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- Projects Section -->
+
+<section class="projects" id="projects">
+    <h2 class="second-heading">Latest <span>Projects</span></h2>
+
+    <div class="project-container">
+        <div class="project-box">
+            <img src="img1.jpeg" alt="">
+            <div class="project-layer">
+                <h4>Portfolio</h4>
+                <p>Designed and developed a personal portfolio website showcasing projects and skills.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project-box">
+            <img src="img2.jpg.webp" alt="">
+            <div class="project-layer">
+                <h4>To-do List</h4>
+                <p>Built a task management web app with features like add, edit and delete task.</p>
+                <a href="https://todoappbyhjain.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project-box">
+            <img src="img3.png" alt="">
+            <div class="project-layer">
+                <h4>Tic-Tac-Toe</h4>
+                <p>Developed a classic and fully responsive Tic Tac Toe game.</p>
+                <a href="https://tictactoebyhjain.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project-box">
+            <img src="img4.jpg" alt="">
+            <div class="project-layer">
+                <h4>Calculator</h4>
+                <p>Created a simple calculator with basic arithmetic operations and user friendly interface.</p>
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project-box">
+            <img src="img5.jpeg" alt="">
+            <div class="project-layer">
+                <h4>Studysync</h4>
+                <p>Clone the complete website which is fully responsive and user friendly.</p>
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project-box">
+            <img src="img6.jpeg" alt="">
+            <div class="project-layer">
+                <h4>Premier</h4>
+                <p>Created the clone of premier website with stunning animations and modern design.</p>
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacts Section -->
+
+    <section class="contact" id="contact">
+        <h2 class="second-heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" placeholder="Enter Full Name">
+                <input type="email" placeholder="Enter E-mail">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" placeholder="Your Message..."></textarea>
+            <input type="submit" value="Send Message" id="submit" class="btn2">
+
+        </form>
+    </section>
+
+<!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 Himanshu Jain | All Rights Reserved.</p>
+        </div>
+        <div class="iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+<!-- JavaScript -->
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="./script.js"></script>
+
+</body>
+</html>

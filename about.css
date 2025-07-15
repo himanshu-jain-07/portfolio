@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --background-color: rgb(21,21,21);
+    --text-color: rgb(253,253,253);
+    --primary-color: rgb(228,81,71);
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Nunito", sans-serif;
+    font-display: swap;
+}
+
+.about{
+    padding: 2rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+span{
+    color: var(--primary-color);
+}
+
+.about-content{
+    width: 80%;
+    margin: auto;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
+p{
+    font-size: 1.3rem;
+    line-height: 1.25;
+}
+
+.intro{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.intro p{
+    margin-left: 1.5rem;
+}
+
+h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills p{
+    margin-left: 1.5rem;
+}
+
+.personal{
+    margin: 2.5rem 0;
+}
+
+.outro p{
+    line-height: 1.5;
+}
+
+@media screen and (max-width:600px) {
+
+    .about-content{
+    width: 90%;
+    }
+
+    h1{
+    font-size: 5vh;
+    }
+
+    h2{
+    font-size: 6vmin;
+    margin: 10vmin 0 5vmin 0;
+    }
+
+    .intro{
+    margin-bottom: 10vmin;
+    gap: 4vmin;
+    }
+
+    .intro p{
+    margin-left: 3.5vmin;
+    }
+
+    h3{
+    font-size: 7vmin;
+    margin-bottom: 0.5vmin;
+    }
+
+    .skills {
+    gap: 1rem;
+    }
+
+    .skills p{
+    margin-left: 3.5vmin;
+    }
+
+    .personal{
+    margin: 10vmin 0;
+    }
+
+}

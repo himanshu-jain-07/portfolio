@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --background-color: rgb(21,21,21);
+    --secondary-background: rgb(38,38,38);
+    --text-color: rgb(253,253,253);
+    --primary-color: rgb(228,81,71);
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Nunito", sans-serif;
+    font-display: swap;
+}
+
+    /* Home Page */
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 10vmin;
+    top: 0;
+    left: 0;
+    background: var(--background-color);
+    padding: 2rem 12vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.header.sticky{
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700
+    ;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 700;
+    transition:all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--primary-color);
+}
+
+
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12vmin 2rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--primary-color);
+}
+
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-img{
+    margin-bottom: 12rem;
+}
+
+.home-img img{
+    width: 100%;
+    height: auto;
+}
+
+.home-content p{
+    font-size: 1.3rem;
+    line-height: 1.4;
+    width: 90%;
+}
+
+.social-media a{
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin: 2rem 1.5rem 2rem 0;
+    transition: all 0.3s ease;
+}
+
+.social-media a:hover{
+    background: var(--primary-color);
+    color: var(--secondary-background);
+    box-shadow: 0 0 1rem var(--primary-color);
+}
+
+.btn{
+    width: 15.28rem;
+    height: 3.57rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--primary-color);
+    font-size: 1.6rem;
+    color: var(--background-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+    font-size: 1.65rem;
+}   
+
+/* About Page */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--secondary-background);
+}
+
+.about-img img{
+    width: 35vw;
+}
+
+.about-heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+
+.about-content h3{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-content p{
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+}
+
+/* Services Page */
+
+.services{
+    padding-top: 7rem;
+}
+.second-heading{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.services h2{
+    margin-bottom: 5rem;
+}
+
+.service-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.service-box{
+    width: 30%;
+    height: 57vmin;
+    background: var(--secondary-background);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--background-color);
+    transition: all 0.3s ease;
+}
+
+.service-box:hover{
+    border-color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.service-box i{
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service-box h3{
+    font-size: 2rem;
+    line-height: 1;
+}
+
+@media screen and (max-width:1385px) {
+    .service-box h3{
+        font-size: 1.7rem;
+    }
+}
+
+.service-box p{
+    font-size: 1.2vw;
+    margin: 2rem 0 3rem;
+    width: 100%;
+    height: 35%;
+}
+
+.btn2{
+    width: 12rem;
+    margin: auto;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--primary-color);
+    font-size: 1.3rem;
+    color: var(--background-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn2:hover{
+    box-shadow: none;
+    font-size: 1.35rem;
+}
+
+.service-description{
+    position: absolute;
+    width: 80vw;
+    background-color: var(--secondary-background);
+    border-radius: 3rem;
+    border: 0.4rem solid var(--primary-color);
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.service-description i{
+    font-size: 2rem;
+    position: absolute;
+}
+
+.service-description h4{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.service-description h5{
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.75rem 0;
+    color: var(--primary-color);
+}
+
+.service-description p{
+    width: 90%;
+    margin: auto;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.hide{
+    display: none;
+}
+
+/* Projects Page */
+
+.projects{
+    padding-top: 7rem;
+    background: var(--secondary-background);
+}
+
+.projects h2{
+    margin-bottom: 3rem;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--background-color);
+    overflow: hidden;
+    display: flex;
+    transition: all 0.1s ease;
+}
+
+.project-box:hover{
+    box-shadow: none;
+}
+
+.project-box img{
+    width: 100%;
+    height: 17rem;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.project-box:hover img{
+    transform: scale(1.1);
+}
+
+.project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--primary-color));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.project-box:hover .project-layer{
+    transform: translateY(0);
+}
+
+.project-layer h4{
+    font-size: 3rem;
+}
+
+.project-layer p{
+    font-size: 1.2rem;
+    line-height: 1;
+     margin: 1rem 0 1rem;
+}
+
+.project-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: var(--text-color);
+}
+
+.project-layer a i{
+    font-size: 1.3rem;
+    color: var(--secondary-background);
+}
+
+.project-layer a:hover{
+    box-shadow: 0 0 1rem rgba(38, 38, 38, 0.5);
+}
+
+
+/* Contact Page */
+
+.contact{
+    padding-top: 7rem;
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact form .input-box input{
+    width: 49%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background: var(--secondary-background);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form textarea{
+    height: 30vmin;
+    resize: none;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background: var(--secondary-background);
+    border-radius: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.contact form .btn2{
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 1.5rem 12vmin;
+    background: var(--secondary-background);
+}
+
+.footer-text{
+    font-size: 1.3rem;
+}
+
+.iconTop{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.6rem;
+    background: var(--primary-color);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.iconTop:hover{
+    box-shadow: 0 0 0.8rem var(--primary-color);
+}
+
+.iconTop a i{
+    font-size: 2rem;
+    color: var(--secondary-background);
+}
+
+/* Breakpoints */
+
+@media screen and (max-width:1250px) {
+    html{
+        font-size: 65%;
+    }
+
+    .service-box{
+        height: 40vmin;
+    }
+    .project-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-box img{
+        height: 25rem;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+
+    .header{
+        padding: 2rem 3vmin;
+    }
+
+    section{
+        padding: 10rem 3vmin;
+    }
+
+    .services{
+        padding: 7rem;
+    }
+
+    .service-box h3{
+        font-size: 2vw;
+    }
+
+    .service-box{
+        height: 45vmin;
+    }
+
+    .projects{
+        padding-bottom: 7rem;
+    }
+
+     .project-box img{
+        height: 25rem;
+    }
+
+    .contact{
+        min-height: auto;
+    }
+
+    .footer{
+        padding: 2rem 3vmin;
+    }
+
+}
+
+@media screen and (max-width:770px) {
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3vmin;
+        background: var(--background-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-content{
+        order: 2;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-img img{
+        width: 70vmin;
+        margin-top: 4rem;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about-img img{
+        width: 90vmin;
+        margin-top: 4rem;
+    }
+
+    .service-container{
+        flex-direction: column;
+    }
+
+    .service-box h3{
+        font-size: 2rem;
+    }
+
+    .service-box p{
+        font-size: 1.15rem
+    }
+
+    .service-box{
+        width: 100%;
+        height: auto;
+    }
+
+    .services h2{
+        margin-bottom: 3rem;
+    }
+
+    .projects{
+        padding-top: 5rem;
+    }
+
+    .projects h2{
+        margin-bottom: 5rem;
+    }
+
+     .project-box img{
+        height: 25rem;
+    }
+
+    .contact h2{
+        margin-bottom: 7rem;
+    }
+
+    #submit{
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width:620px) {
+
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    .home-img img{
+        width: 80vmin;
+        margin-top: 6rem;
+    }
+
+    .about-img img{
+        width: 100vmin;
+        margin-top: 3rem;
+    }
+
+    .project-box img{
+        height: 30rem;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    .contact form .input-box input{
+        width: 100%;
+    }
+
+    .contact form .input-box {
+        flex-direction: column;
+    }
+
+    .project-box img{
+    height: 27rem;
+    }
+
+}
